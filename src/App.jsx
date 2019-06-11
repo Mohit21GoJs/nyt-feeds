@@ -1,16 +1,12 @@
-import { Component } from 'react';
-import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import ArticleList from 'containers/ArticleList';
+import ArticleDetail from 'containers/ArticleDetail';
 
-export default class App extends Component {
-  state = {
-    name: 'mash',
-  };
+const App = () => (
+    <Router>
+      <Route exact path="/" component={ArticleList} />
+      <Route path="/details" component={ArticleDetail} />  
+    </Router>
+);
 
-  render() {
-    return (
-      <div className="App">
-        <h1>Welcome to {this.state.name}</h1>
-      </div>
-    );
-  }
-}
+export default App;
