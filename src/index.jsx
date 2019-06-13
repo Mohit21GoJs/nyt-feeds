@@ -6,7 +6,7 @@ const root = document.getElementById('root');
 const load = () => render(
   (
     <AppContainer>
-       <App/>
+       <App />
     </AppContainer>
   ), root,
 );

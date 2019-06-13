@@ -4,8 +4,8 @@ import ArticleDetail from 'containers/ArticleDetail';
 
 const App = () => (
     <Router>
-      <Route exact path="/" component={ArticleList} />
-      <Route path="/details" component={ArticleDetail} />  
+        <Route exact path="/" component={ArticleList} />
+        <Route path="/details" component={ArticleDetail} />
     </Router>
 );
 

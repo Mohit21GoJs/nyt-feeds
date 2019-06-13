@@ -1,6 +1,21 @@
 module.exports = {
   use: [
-    '@neutrinojs/airbnb',
+    [
+      '@neutrinojs/airbnb',
+      {
+        eslint: {
+          rules: {
+            semi: 'off',
+            indent: "off",
+            "eol-last": "off",
+            "no-trailing-spaces": "off",
+            "react/jsx-indent": "off",
+            "import/no-unresolved": "off",
+            "import/extensions": "off"
+          }
+        }
+      }
+    ],
     [
       '@neutrinojs/react',
       {
